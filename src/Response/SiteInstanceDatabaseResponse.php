@@ -4,7 +4,6 @@ namespace AcquiaCloudApi\Response;
 
 class SiteInstanceDatabaseResponse
 {
-
     public string $databaseName;
 
     public string $databaseRole;

@@ -55,7 +55,9 @@ class SiteInstancesTest extends CloudApiTestCase
 
     public function testGetSiteInstanceDatabaseConnection(): void
     {
-        $response = $this->getPsr7JsonResponseForFixture('Endpoints/SiteInstances/getSiteInstanceDatabaseConnection.json');
+        $response = $this->getPsr7JsonResponseForFixture(
+            'Endpoints/SiteInstances/getSiteInstanceDatabaseConnection.json'
+        );
         $client = $this->getMockClient($response);
 
         $siteInstances = new SiteInstances($client);
@@ -331,7 +333,9 @@ class SiteInstancesTest extends CloudApiTestCase
 
     public function testDatabaseConnectionResponseTransformations(): void
     {
-        $response = $this->getPsr7JsonResponseForFixture('Endpoints/SiteInstances/getSiteInstanceDatabaseConnection.json');
+        $response = $this->getPsr7JsonResponseForFixture(
+            'Endpoints/SiteInstances/getSiteInstanceDatabaseConnection.json'
+        );
         $client = $this->getMockClient($response);
 
         $siteInstances = new SiteInstances($client);
